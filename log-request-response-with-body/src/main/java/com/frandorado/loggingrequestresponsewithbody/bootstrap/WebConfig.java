@@ -3,12 +3,12 @@ package com.frandorado.loggingrequestresponsewithbody.bootstrap;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 import com.frandorado.loggingrequestresponsewithbody.interceptor.LogInterceptor;
 
 @Configuration
-public class WebConfig implements WebMvcConfigurer {
+public class WebConfig extends WebMvcConfigurerAdapter {
     
     @Autowired
     LogInterceptor logInterceptor;

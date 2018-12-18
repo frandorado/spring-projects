@@ -8,12 +8,13 @@ import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import lombok.extern.java.Log;
 import org.springframework.stereotype.Component;
 
 import lombok.extern.log4j.Log4j2;
 
 @Component
-@Log4j2
+@Log
 public class LoggingServiceImpl implements LoggingService {
     
     @Override
@@ -31,11 +32,10 @@ public class LoggingServiceImpl implements LoggingService {
         }
         
         if (body != null) {
-            stringBuilder.append("body=[{}]");
-            log.info(stringBuilder.toString(), body);
-        } else {
-            log.info(stringBuilder.toString());
+            stringBuilder.append("body=[" + body + "]");
         }
+        
+        log.info(stringBuilder.toString());
     }
     
     @Override
