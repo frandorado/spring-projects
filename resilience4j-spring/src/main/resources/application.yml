@@ -1,0 +1,25 @@
+endpoints:
+  actuator:
+    sensitive: false
+
+management:
+  security:
+    enabled: false
+
+resilience4j.circuitbreaker:
+  backends:
+    default:
+      ringBufferSizeInClosedState: 3
+      ringBufferSizeInHalfOpenState: 3
+      waitInterval: 1000
+      failureRateThreshold: 20
+    serviceA:
+      ringBufferSizeInClosedState: 2
+      ringBufferSizeInHalfOpenState: 2
+      waitInterval: 1000
+      failureRateThreshold: 50
+#      registerHealthIndicator: false
+#      recordExceptions:
+#      - org.springframework.web.client.HttpServerErrorException
+#      ignoreExceptions:
+#      - org.springframework.web.client.HttpClientErrorException

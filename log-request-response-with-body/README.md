@@ -1,6 +1,6 @@
 # Logging Request and Response with body in Spring.
 
-This project shows a way to log requests and responses in Spring including the body data. More info [here]()
+This project shows a way to log requests and responses in Spring including the body data. More info [here](https://frandorado.github.io/spring/2018/11/15/log-request-response-with-body-spring.html)
 
 ## How to test
 
