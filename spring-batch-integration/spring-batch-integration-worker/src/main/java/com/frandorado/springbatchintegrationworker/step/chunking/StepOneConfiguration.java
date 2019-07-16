@@ -1,4 +1,4 @@
-package com.frandorado.springbatchintegrationslave.step.chunking;
+package com.frandorado.springbatchintegrationworker.step.chunking;
 
 import org.apache.activemq.ActiveMQConnectionFactory;
 import org.springframework.batch.core.step.item.ChunkProcessor;
@@ -12,13 +12,11 @@ import org.springframework.integration.annotation.ServiceActivator;
 import org.springframework.integration.channel.DirectChannel;
 import org.springframework.integration.dsl.IntegrationFlow;
 
-import com.frandorado.springbatchintegrationslave.step.chunking.RemoteChunkingStepConfiguration;
-
 // Step1
 @Configuration
 public class StepOneConfiguration extends RemoteChunkingStepConfiguration {
     
-    /*private static final String REQUEST_CHANNEL = "stepOneRequestChannel";
+    private static final String REQUEST_CHANNEL = "stepOneRequestChannel";
     private static final String RESPONSE_CHANNEL = "stepOneResponseChannel";
     
     @Bean
@@ -71,5 +69,5 @@ public class StepOneConfiguration extends RemoteChunkingStepConfiguration {
         return chunkProcessorChunkHandler;
     }
     
-     */
+    
 }

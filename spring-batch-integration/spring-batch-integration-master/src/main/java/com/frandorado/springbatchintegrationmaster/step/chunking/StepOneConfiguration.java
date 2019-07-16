@@ -16,7 +16,7 @@ import org.springframework.integration.channel.QueueChannel;
 import org.springframework.integration.core.MessagingTemplate;
 import org.springframework.integration.dsl.IntegrationFlow;
 import org.springframework.integration.dsl.IntegrationFlows;
-import org.springframework.integration.dsl.jms.Jms;
+import org.springframework.integration.jms.dsl.Jms;
 
 /**
  * Use of remote chunking

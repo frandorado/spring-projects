@@ -1,4 +1,4 @@
-package com.frandorado.springbatchintegrationslave.property;
+package com.frandorado.springbatchintegrationworker.property;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;

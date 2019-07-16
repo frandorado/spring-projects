@@ -1,4 +1,4 @@
-package com.frandorado.springbatchintegrationslave;
+package com.frandorado.springbatchintegrationworker;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

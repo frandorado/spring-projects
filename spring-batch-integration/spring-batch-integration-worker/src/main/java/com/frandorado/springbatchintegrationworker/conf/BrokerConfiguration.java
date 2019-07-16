@@ -1,11 +1,11 @@
-package com.frandorado.springbatchintegrationslave.conf;
+package com.frandorado.springbatchintegrationworker.conf;
 
 import org.apache.activemq.ActiveMQConnectionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import com.frandorado.springbatchintegrationslave.property.ApplicationProperties;
+import com.frandorado.springbatchintegrationworker.property.ApplicationProperties;
 
 @Configuration
 public class BrokerConfiguration {

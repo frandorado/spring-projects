@@ -16,7 +16,7 @@ services:
       # jms
       - "61616:61616"
 
-  db:
+  mysql:
     image: mysql:5.7
     ports:
       - "3306:3306"
