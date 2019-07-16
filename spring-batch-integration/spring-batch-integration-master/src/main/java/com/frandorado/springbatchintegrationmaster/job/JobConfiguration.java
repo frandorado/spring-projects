@@ -36,12 +36,15 @@ public class JobConfiguration {
     @Autowired
     Step stepTwo;
     
+    @Autowired
+    Step stepThree;
+    
     @Bean
     public Job mainJob() {
         return jobBuilderFactory.get("mainJob")
                 //.start(stepOne)
                 //.next(stepTwo)
-                .start(stepTwo)
+                .start(stepThree)
                 .build();
     }
     

@@ -16,7 +16,7 @@ import org.springframework.integration.dsl.IntegrationFlows;
 import org.springframework.integration.jms.dsl.Jms;
 
 @Configuration
-public class StepTwoWorkerConfiguration {
+public class StepTwoConfiguration {
     
     private static final String REQUEST_CHANNEL = "stepTwoRequestChannel";
     
@@ -41,13 +41,13 @@ public class StepTwoWorkerConfiguration {
     public Step stepTwoWorker() {
         return this.workerStepBuilderFactory.get("stepTwoWorker")
                 .inputChannel(inboundRequestChannel())
-                .tasklet(tasklet(null))
+                .tasklet(stepTwoTasklet(null))
                 .build();
     }
     
     @Bean
     @StepScope
-    public Tasklet tasklet(@Value("#{stepExecutionContext['partition']}") String partition) {
+    public Tasklet stepTwoTasklet(@Value("#{stepExecutionContext['partition']}") String partition) {
         return (contribution, chunkContext) -> {
             System.out.println("processing " + partition);
             return RepeatStatus.FINISHED;
