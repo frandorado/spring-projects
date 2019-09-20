@@ -9,7 +9,7 @@ More info in
 
 * Run the docker-compose.yml file
   * `docker-compose up`
-  * `dTMPDIR=/private$TMPDIR docker-compose up` (MAC users)
+  * `TMPDIR=/private$TMPDIR docker-compose up` (MAC users)
 
 * Create the queues if don't exist
 
