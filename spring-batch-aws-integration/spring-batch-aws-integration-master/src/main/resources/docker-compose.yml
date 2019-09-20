@@ -1,0 +1,25 @@
+version: '3'
+services:
+  postgres:
+    image: postgres:9.6.8-alpine
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: db
+
+  localstack:
+    image: localstack/localstack
+    ports:
+      - "4567-4583:4567-4583"
+    environment:
+      - SERVICES=sqs
+      - DATA_DIR=${DATA_DIR- }
+      - PORT_WEB_UI=${PORT_WEB_UI- }
+      - LAMBDA_EXECUTOR=${LAMBDA_EXECUTOR- }
+      - DOCKER_HOST=unix:///var/run/docker.sock
+    volumes:
+      - "${TMPDIR:-/tmp/localstack}:/tmp/localstack"
+      - "/var/run/docker.sock:/var/run/docker.sock"
