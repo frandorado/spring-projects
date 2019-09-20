@@ -1,5 +1,7 @@
 # Spring projects
 
+* `Sep 19` **Spring Batch AWS Integration** Integration of Spring Batch with AWS SQS for remote chunking and partitioning. [Link to the project](https://github.com/frandorado/spring-projects/tree/master/spring-batch-aws-integration) and [Link to the blog](https://frandorado.github.io/spring/2019/07/29/spring-batch-aws-series-introduction.html) 
+
 * `Jun 19` **Reactive vs Non-Reactive Spring Performance** Comparation of performance between Spring MVC and Spring WebFlux. [Link to the project](https://github.com/frandorado/spring-projects/tree/master/spring-reactive-nonreactive) and [Link to the blog](https://frandorado.github.io/spring/2019/06/26/spring-reactive-vs-non-reactive-performance.html)
  
 * `Apr 19` **Spring Data Mongo using Mongo Cluster** Spring Data Mongo using a configured Cluster with Docker. [Link to the project](https://github.com/frandorado/spring-projects/tree/master/spring-data-mongo-with-cluster) and [Link to the blog](https://frandorado.github.io/spring/2019/04/16/mongo-cluster-with-spring-data-mongo.html)
