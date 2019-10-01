@@ -59,7 +59,8 @@ public class Step1Configuration {
         SqsMessageDrivenChannelAdapter adapter = new SqsMessageDrivenChannelAdapter(amazonSQSAsync, REQUEST_QUEUE_NAME);
         
         adapter.setOutputChannel(step1RequestMessageChannel());
-        adapter.setMessageDeletionPolicy(SqsMessageDeletionPolicy.ON_SUCCESS);
+        // ACK in transformer
+        adapter.setMessageDeletionPolicy(SqsMessageDeletionPolicy.NEVER);
         adapter.setMaxNumberOfMessages(1);
         return adapter;
     }
