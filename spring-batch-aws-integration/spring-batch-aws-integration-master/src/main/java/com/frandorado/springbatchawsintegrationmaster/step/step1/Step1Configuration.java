@@ -1,4 +1,4 @@
-package com.frandorado.springbatchawsintegrationmaster.step;
+package com.frandorado.springbatchawsintegrationmaster.step.step1;
 
 import org.springframework.batch.core.Step;
 import org.springframework.batch.core.configuration.annotation.JobScope;

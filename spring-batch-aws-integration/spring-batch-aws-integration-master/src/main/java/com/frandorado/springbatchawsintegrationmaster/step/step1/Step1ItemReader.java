@@ -1,4 +1,4 @@
-package com.frandorado.springbatchawsintegrationmaster.step;
+package com.frandorado.springbatchawsintegrationmaster.step.step1;
 
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;

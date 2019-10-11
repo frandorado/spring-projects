@@ -1,4 +1,4 @@
-package com.frandorado.springbatchawsintegrationslave.step;
+package com.frandorado.springbatchawsintegrationslave.step.step1;
 
 import java.util.List;
 

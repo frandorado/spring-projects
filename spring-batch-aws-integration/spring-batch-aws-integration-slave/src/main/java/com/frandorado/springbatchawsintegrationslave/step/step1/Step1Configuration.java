@@ -1,4 +1,4 @@
-package com.frandorado.springbatchawsintegrationslave.step;
+package com.frandorado.springbatchawsintegrationslave.step.step1;
 
 import org.springframework.batch.core.step.item.SimpleChunkProcessor;
 import org.springframework.batch.integration.chunk.ChunkProcessorChunkHandler;

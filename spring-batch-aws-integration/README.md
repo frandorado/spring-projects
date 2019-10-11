@@ -18,6 +18,8 @@ More info in
 
   aws sqs create-queue --endpoint http://localhost:4576 --queue-name step1-response.fifo --attributes '{"FifoQueue": "true", "ContentBasedDeduplication":"true"}'
 
+  aws sqs create-queue --endpoint http://localhost:4576 --queue-name step2-request.fifo --attributes '{"FifoQueue": "true", "ContentBasedDeduplication":"true"}'
+
   ```
 
 * Run one or more slaves using the main class `com.frandorado.springbatchawsintegrationslave.SpringBatchAwsIntegrationSlaveApplication`

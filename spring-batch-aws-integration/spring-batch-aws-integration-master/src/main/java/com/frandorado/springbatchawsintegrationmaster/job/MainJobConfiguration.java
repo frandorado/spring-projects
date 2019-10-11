@@ -19,10 +19,13 @@ public class MainJobConfiguration {
     Step step1;
     
     @Autowired
+    Step step2;
+    
+    @Autowired
     MainJobExecutionListener mainJobExecutionListener;
     
     @Bean
     public Job job() {
-        return jobBuilderFactory.get("job" + new Date()).listener(mainJobExecutionListener).start(step1).build();
+        return jobBuilderFactory.get("job" + new Date()).listener(mainJobExecutionListener).start(step2).build();
     }
 }
