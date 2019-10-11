@@ -26,6 +26,6 @@ public class MainJobConfiguration {
     
     @Bean
     public Job job() {
-        return jobBuilderFactory.get("job" + new Date()).listener(mainJobExecutionListener).start(step2).build();
+        return jobBuilderFactory.get("job" + new Date()).listener(mainJobExecutionListener).start(step1).next(step2).build();
     }
 }
