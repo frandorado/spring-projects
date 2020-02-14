@@ -1,5 +1,7 @@
 # Spring projects
 
+* `Feb 20` **Custom deserialization in Spring** Custom deserialization using Jackson [Link to the project](https://github.com/frandorado/spring-projects/tree/master/spring-custom-serializer-deserializer) and [Link to the blog](https://frandorado.github.io/spring/2020/02/14/spring-custom-json-transforms.html) 
+
 * `Sep 19` **Spring Batch AWS Integration** Integration of Spring Batch with AWS SQS for remote chunking and partitioning. [Link to the project](https://github.com/frandorado/spring-projects/tree/master/spring-batch-aws-integration) and [Link to the blog](https://frandorado.github.io/spring/2019/07/29/spring-batch-aws-series-introduction.html) 
 
 * `Jun 19` **Reactive vs Non-Reactive Spring Performance** Comparation of performance between Spring MVC and Spring WebFlux. [Link to the project](https://github.com/frandorado/spring-projects/tree/master/spring-reactive-nonreactive) and [Link to the blog](https://frandorado.github.io/spring/2019/06/26/spring-reactive-vs-non-reactive-performance.html)
