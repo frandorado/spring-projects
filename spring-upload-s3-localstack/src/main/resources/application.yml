@@ -1,0 +1,7 @@
+spring.servlet.multipart:
+  max-file-size: 10MB
+  max-request-size: 10MB
+
+aws.s3:
+  endpoint-url: http://localhost:4572
+  bucket-name: uploads
