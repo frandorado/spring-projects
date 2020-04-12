@@ -1,11 +1,9 @@
-# Spring Reactive vs Non-Reactive
+# Spring Batch AWS Integration
 
 Link to [Spring Batch AWS Series](https://frandorado.github.io/spring/2019/07/29/spring-batch-aws-series-introduction.html)
 
 
 ## How to test
-
-More info in 
 
 * Run the docker-compose.yml file
   * `docker-compose up`
