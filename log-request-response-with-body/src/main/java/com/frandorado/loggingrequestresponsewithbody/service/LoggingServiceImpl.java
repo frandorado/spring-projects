@@ -9,11 +9,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import lombok.extern.java.Log;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import lombok.extern.log4j.Log4j2;
 
-@Component
+@Service
 @Log
 public class LoggingServiceImpl implements LoggingService {
     
